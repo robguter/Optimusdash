@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxWidth="1.7976931348623157E308" prefHeight="840.0" prefWidth="1560.0"
+            xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controladores.inicioController">
+   <children>
+      <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="840.0" prefWidth="1560.0" stylesheets="@../publicos/estilos/estilo.css">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="pnlp" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <center>
+                  <Label styleClass="fntTit" text="RASTREADOR" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

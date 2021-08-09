@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxWidth="1.7976931348623157E308" prefHeight="840.0" prefWidth="1560.0"
+            xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controladores.inicioController">
+   <children>
+      <ImageView fx:id="imgFnd" fitHeight="840.0" fitWidth="1560.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../publicos/img/gluon-dashboard1-1024x687@2x.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

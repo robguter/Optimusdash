@@ -1,0 +1,105 @@
+.root{
+  -icons-color: rgb(100,180,200);
+}
+.pnlp {
+    -fx-background-color: rgba(70,0,70,.95);
+    -fx-border-width:       2px;
+    -fx-border-color:       #456;
+}
+.pnli, .vrtBx {
+    -fx-background-color: rgba(50,60,70,.85);
+    -fx-pref-width: 140px;
+    -fx-max-width: 140px;
+}
+.vrtBx {
+    -fx-background-color: transparent;
+}
+.pnls {
+    -fx-background-color: rgba(60,70,80,.95);
+    -fx-pref-height: 60px;
+    -fx-max-height: 60px;
+}
+.btn, .lbl {
+    -fx-font-family: 'Source Sans Variable', 'sans serif';
+    -fx-text-fill:  #FFF;
+    -fx-font-style: normal;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+}
+.etiqueta {
+     -fx-font-family: 'Source Sans Variable', 'Times New Roman';
+     -fx-text-fill:  #FFF;
+     -fx-font-style: normal;
+     -fx-font-size: 16px;
+ }
+.btn, .btns {
+    -fx-background-color: rgba(60,70,80,1);
+    -fx-text-fill: rgba(255,255,255,.85);
+    -fx-font-size: 130%;
+    -fx-text-align: CENTER;
+    -fx-padding: 0px 0px 0px 0px;
+    -fx-alignment:  center;
+    transition: 1.8s;
+    transition-property: color, transform;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.7), 6, 0.0, 0, 2);
+}
+.btns {
+    -fx-pref-width:      220px;
+    -fx-max-width:       220px;
+    -fx-min-width:       220px;
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.7), 2, 0.0, 0, 1);
+}
+.btn:hover, .btn:focus,
+ .btns:hover, .btns:focus {
+    -fx-background-color:   rgba(0,140,150,1);
+    -fx-text-fill:          rgba(255,255,255,.95);
+    -fx-font-weight:        bold;
+    -fx-border-width:       0px 0px 0px 3px;
+    -fx-border-color:       rgba(255,255,255,.5);
+    -fx-border-radius:      0px 4px 4px 0px;
+    -fx-effect:             dropshadow(gaussian, rgba(255,255,255,0.5), 0,0,0,1);
+}
+.btns:hover, .btns:focus {
+    -fx-border-width:       3px 0px 0px 0px;
+}
+.btn:pressed, .btns:pressed {
+    -fx-background-color: rgba(170,190,250,.95);
+    -fx-text-fill: rgba(255,255,255,.25);
+}
+.fuenteTit, .fntTit {
+    -fx-font-family:    'Source Sans Variable', 'sans serif';
+    -fx-text-fill:      #FFF;
+    -fx-font-style:     italic;
+    -fx-font-size:      18px;
+    -fx-background-color: transparent;
+}
+.fntTit {
+    -fx-font-size:      36px;
+    -fx-font-weight:    bold;
+}
+.grnd {
+    -fx-font-family: 'Source Sans Variable', 'sans serif';
+    -fx-text-fill:  #FFF;
+    -fx-font-style: italic;
+    -fx-font-size: 24px;
+}
+.awes {
+    -fx-stroke: rgba(255,255,255,.95);
+    -fx-stroke-width: 3px;
+    -fx-stroke-type: outside;
+    -fx-fill: rgba(0,140,150,1);
+    -fx-font-size: 2em;
+    -fx-size: 2em;
+}
+.btn:hover .awes, .btn:focus .awes,
+.btns:hover .awes, .btns:focus .awes {
+    -fx-stroke-width: 0.2em;
+    -fx-stroke: rgba(0,40,50,1);
+    -fx-fill: rgba(255,255,255,.95);
+}
+.menuBar{
+    -fx-background-color: rgba(40,60,100,.95);
+}
+.icon-glass:before {
+    content: "\f000";
+}

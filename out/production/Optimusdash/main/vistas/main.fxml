@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1700.0" stylesheets="@../publicos/estilos/estilo.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controladores.mainController">
+   <children>
+      <Pane fx:id="pnlIzq" layoutY="80.0" maxHeight="1.7976931348623157E308" prefHeight="840.0" prefWidth="200.0" styleClass="pnli" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="60.0">
+         <children>
+            <VBox fx:id="vbxPnlIzq" maxWidth="1.7976931348623157E308" prefHeight="840.0" prefWidth="200.0" spacing="2.0" styleClass="vrtBx">
+               <children>
+                  <JFXButton fx:id="btnMenu" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" onAction="#handleClick" prefHeight="50.0" prefWidth="200.0" styleClass="btn" text="Menu" textAlignment="CENTER">
+                     <graphic>
+                        <FontAwesomeIcon fx:id="aweMnu" glyphName="BARS" size="2em" styleClass="awes" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnCartOpt" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" onAction="#handleClick" prefHeight="90.0" prefWidth="200.0" styleClass="btn" text="Cartera Óptima" textAlignment="CENTER">
+                     <graphic>
+                        <FontAwesomeIcon fx:id="aweCrt" glyphName="BRIEFCASE" size="2em" styleClass="awes" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnAnaCartOpt" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" onAction="#handleClick" prefHeight="90.0" prefWidth="200.0" styleClass="btn" text="Análisis Cartera Óptima" textAlignment="CENTER" wrapText="true">
+                     <graphic>
+                        <FontAwesomeIcon fx:id="aweAna" glyphName="LINE_CHART" size="2em" styleClass="awes" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnRastrea" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" onAction="#handleClick" prefHeight="90.0" prefWidth="200.0" styleClass="btn" text="Rastreador" textAlignment="CENTER">
+                     <graphic>
+                        <FontAwesomeIcon fx:id="aweRst" glyphName="EXCHANGE" size="2em" styleClass="awes" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btnPondera" alignment="CENTER" contentDisplay="TOP" graphicTextGap="5.0" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" onAction="#handleClick" prefHeight="90.0" prefWidth="200.0" styleClass="btn" text="Ponderador" textAlignment="CENTER">
+                     <graphic>
+                        <FontAwesomeIcon fx:id="awePnd" glyphName="CALCULATOR" size="2em" styleClass="awes" />
+                     </graphic>
+                  </JFXButton>
+                  <Separator prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="2.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <VBox fx:id="vbxBusca" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                     <children>
+                        <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="etiqueta" text="Buscador" />
+                        <TextField />
+                        <Separator prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets bottom="15.0" top="2.0" />
+                           </VBox.margin>
+                        </Separator>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children></Pane>
+      <Pane fx:id="pnlSup" maxHeight="60.0" prefHeight="60.0" prefWidth="1700.0" styleClass="pnls" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="2.0" layoutY="25.0" styleClass="grnd" text="Planificación" />
+            <FontAwesomeIcon glyphName="MONEY" layoutX="99.0" layoutY="26.0" size="2.25em" styleClass="awes" />
+            <Label layoutX="4.0" layoutY="2.0" styleClass="fuenteTit" text="Estrategia" />
+            <Pane layoutX="1500.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnlCntn" layoutX="140.0" layoutY="60.0" maxWidth="1.7976931348623157E308" prefWidth="1560.0" styleClass="pnlp" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0" />
+      <HBox maxHeight="60.0" prefHeight="60.0" prefWidth="1205.0" spacing="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" maxWidth="-Infinity" prefHeight="60.0" prefWidth="200.0" styleClass="btns" text="Planificador" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIcon fx:id="awePln" glyphName="INBOX" size="2em" styleClass="awes" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" maxWidth="-Infinity" prefHeight="60.0" prefWidth="200.0" styleClass="btns" text="Gestor/Simulador" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIcon fx:id="aweGsi" glyphName="COG" size="2em" styleClass="awes" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" maxWidth="-Infinity" prefHeight="60.0" prefWidth="200.0" styleClass="btns" text="Conectar Brocker" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIcon fx:id="aweCnb" glyphName="LINK" size="2em" styleClass="awes" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" maxWidth="-Infinity" prefHeight="60.0" prefWidth="200.0" styleClass="btns" text="Comprar Guías" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIcon fx:id="aweCmg" glyphName="CREDIT_CARD" size="2em" styleClass="awes" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="TOP" graphicTextGap="0.0" maxWidth="-Infinity" prefHeight="60.0" prefWidth="200.0" styleClass="btns" text="Configuración" textAlignment="CENTER">
+               <graphic>
+                  <FontAwesomeIcon fx:id="aweCnf" glyphName="COGS" size="2em" styleClass="awes" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnClose" alignment="CENTER_RIGHT" contentDisplay="TOP" graphicTextGap="0.0" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleClick" prefHeight="60.0" prefWidth="200.0" styleClass="btns" text="Salir" textAlignment="RIGHT">
+               <graphic>
+                  <FontAwesomeIcon fx:id="aweExt" glyphName="SIGN_OUT" size="2em" styleClass="awes" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
